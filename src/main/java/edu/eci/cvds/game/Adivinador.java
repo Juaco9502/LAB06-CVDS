@@ -3,9 +3,9 @@ package edu.eci.cvds.game;
 import java.util.ArrayList;
 import java.util.Random;
 
-import javax.faces.bean.ApplicationScoped; 
+//import javax.faces.bean.ApplicationScoped; 
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.ManagedProperty;
+//import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.*;
 
 @ManagedBean(name = "guessBeans")
