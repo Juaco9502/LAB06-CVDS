@@ -8,14 +8,14 @@
     <h:form id="guess_form">
             <p:outputLabel value="#{guessBeans.getNumero()}"  style="display:none"/>
 			<br><p:inputText binding="#{input}" /></br>
-			
-			<p:commandButton value="Enviar" update="guess_form" actionListener="#{guessBeans.guess(input.value)}" />
-			<p:commandButton value="Reinicar" update="guess_form" actionListener="#{guessBeans.restart()}" />
-			<h3>Intentos:</h3>
+		<div align="right">
+			<p:commandButton style="float="right" value="Enviar" update="guess_form" actionListener="#{guessBeans.guess(input.value)}" />
+			<p:commandButton style="float="right" value="Reinicar" update="guess_form" actionListener="#{guessBeans.restart()}" />
+			<h3 align="center">Intentos:</h3>
 			<p:outputLabel value="#{guessBeans.getIntentosRealizados()}" />
-			<h3>Estado de juego:</h3>
+			<h3 align="center">Estado de juego:</h3>
 			<p:outputLabel value="#{guessBeans.getEstado()}"/>
-			<h3>Premio:</h3>
+			<h3align="center">Premio:</h3>
 			<p:outputLabel value="#{guessBeans.getPremio()}" />
 			
 			<p:dataTable var="historial" value="#{guessBeans.getHistorial()}" style="width:150px;">
