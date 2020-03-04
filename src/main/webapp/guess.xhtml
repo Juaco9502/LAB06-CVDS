@@ -3,25 +3,26 @@
 	xmlns:h="http://xmlns.jcp.org/jsf/html"
 	xmlns:p="http://primefaces.org/ui">
 <h:head></h:head>
-<h:body>
-    <h1 align="center"> ADIVINA EL NÚMERO </h1>
+<h:body>	
+    <h1> Adivina el numero </h1>
     <h:form id="guess_form">
             <p:outputLabel value="#{guessBeans.getNumero()}"  style="display:none"/>
 			<br><p:inputText binding="#{input}" /></br>
+			
 			<p:commandButton value="Enviar" update="guess_form" actionListener="#{guessBeans.guess(input.value)}" />
 			<p:commandButton value="Reinicar" update="guess_form" actionListener="#{guessBeans.restart()}" />
-			<h3 align="center">Intentos:</h3>
+			<h3>Intentos:</h3>
 			<p:outputLabel value="#{guessBeans.getIntentosRealizados()}" />
-			<h3 align="center">Estado de juego:</h3>
+			<h3>Estado de juego:</h3>
 			<p:outputLabel value="#{guessBeans.getEstado()}"/>
-			<h3align="center">Premio:</h3>
+			<h3>Premio:</h3>
 			<p:outputLabel value="#{guessBeans.getPremio()}" />
 			
 			<p:dataTable var="historial" value="#{guessBeans.getHistorial()}" style="width:150px;">
-				<p:column headerText="Historial de números:">
+				<p:column headerText="Historial de numeros:">
 					<h:outputText value= "#{historial}"/>
 				</p:column>
 			</p:dataTable>
     </h:form> 
-</h:body>	
+</h:body>
 </html>
