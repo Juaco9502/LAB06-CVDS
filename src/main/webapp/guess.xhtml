@@ -3,7 +3,7 @@
 	xmlns:h="http://xmlns.jcp.org/jsf/html"
 	xmlns:p="http://primefaces.org/ui">
 <h:head></h:head>
-<h:body background="background.png">
+<body background=https://i.imgur.com/V2nlDwN.png>
 <center>
     <h1> ADIVINA EL NÚMERO </h1>
     <h:form id="guess_form">
@@ -17,8 +17,8 @@
 			<h3>Estado de juego:</h3>
 			<p:outputLabel value="#{guessBeans.getEstado()}"/>
 			<h3>Premio:</h3>
-			<p:outputLabel value="#{guessBeans.getPremio()}" /><br/>
-			
+			<p:outputLabel value="#{guessBeans.getPremio()}" />
+			<br/>
 			<p:dataTable var="historial" value="#{guessBeans.getHistorial()}" style="width:150px;">
 				<p:column headerText="Historial de números:">
 					<h:outputText value= "#{historial}"/>
