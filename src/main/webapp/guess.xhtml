@@ -19,7 +19,7 @@
 			<h3 style="color:white;">ESTADO DEL JUEGO:</h3>
 			<p:outputLabel value="#{guessBeans.getEstado()}"/>
 			<h3 style="color:white;">PREMIO:</h3>
-			<p:outputLabel value="#{guessBeans.getPremio()}" /><br>
+			<p:outputLabel value="#{guessBeans.getPremio()}" /><br />
 			<p:dataTable var="historial" value="#{guessBeans.getHistorial()}" style="width:150px;">
 				<p:column headerText="HISTORIAL DE NÚMEROS:">
 					<h:outputText value= "#{historial}"/>
