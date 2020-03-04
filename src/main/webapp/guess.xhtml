@@ -5,7 +5,7 @@
 <h:head></h:head>
 <body background="background.jpg">
 <center>
- <font face="impact" size="30" color="blue"> 
+ <font face="impact" size="60" color="blue"> 
           ADIVINA EL NÚMERO
  </font> 
     <h:form id="guess_form">
@@ -15,11 +15,11 @@
 			<p:commandButton value="Enviar" update="guess_form" actionListener="#{guessBeans.guess(input.value)}" />
 			<p:commandButton value="Reinicar" update="guess_form" actionListener="#{guessBeans.restart()}" />
 			<h3 style="color:white;">INTENTOS:</h3>
-			<p:outputLabel value="#{guessBeans.getIntentosRealizados()}" />
+			<p:outputLabel face="impact" style="color: blue" value="#{guessBeans.getIntentosRealizados()}" />
 			<h3 style="color:white;">ESTADO DEL JUEGO:</h3>
-			<p:outputLabel value="#{guessBeans.getEstado()}"/>
+			<p:outputLabel face="impact" style="color: blue" value="#{guessBeans.getEstado()}"/>
 			<h3 style="color:white;">PREMIO:</h3>
-			<p:outputLabel style="color: blue" value="#{guessBeans.getPremio()}" /><br/>
+			<p:outputLabel face="impact" style="color: blue" value="#{guessBeans.getPremio()}" /><br/>
 			<br/>
 			<p:dataTable var="historial" value="#{guessBeans.getHistorial()}" style="width:150px;">
 				<p:column headerText="HISTORIAL DE NÚMEROS:">
