@@ -12,12 +12,12 @@
 			
 			<p:commandButton value="Enviar" update="guess_form" actionListener="#{guessBeans.guess(input.value)}" />
 			<p:commandButton value="Reinicar" update="guess_form" actionListener="#{guessBeans.restart()}" />
-			<h3>Intentos:</h3>
+			<h3 style="color:blue;">Intentos:</h3>
 			<p:outputLabel value="#{guessBeans.getIntentosRealizados()}" />
-			<h3>Estado de juego:</h3>
+			<h3 style="color:blue;">Estado de juego:</h3>
 			<p:outputLabel value="#{guessBeans.getEstado()}"/>
-			<h3>Premio:</h3>
-			<p:outputLabel value="#{guessBeans.getPremio()}" /><br/>
+			<h3 style="color:blue;">Premio:</h3>
+			<p:outputLabel value="#{guessBeans.getPremio()}" /></br>
 			<p:dataTable var="historial" value="#{guessBeans.getHistorial()}" style="width:150px;">
 				<p:column headerText="Historial de números:">
 					<h:outputText value= "#{historial}"/>
