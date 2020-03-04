@@ -12,7 +12,7 @@
             <p:outputLabel value="#{guessBeans.getNumero()}"  style="display:none"/>
 			<br><p:inputText binding="#{input}" /></br>
 			
-			<p:commandButton value="Enviar" update="guess_form" actionListener="#{guessBeans.guess(input.value)}" />
+			<p:commandButton style="margin: 10px" value="Enviar" update="guess_form" actionListener="#{guessBeans.guess(input.value)}" />
 			<p:commandButton value="Reinicar" update="guess_form" actionListener="#{guessBeans.restart()}" />
 			<h3 style="color:white;">INTENTOS:</h3>
 			<p:outputLabel face="impact" style="color: blue" value="#{guessBeans.getIntentosRealizados()}" />
